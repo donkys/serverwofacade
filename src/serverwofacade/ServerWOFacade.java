@@ -8,12 +8,8 @@ package serverwofacade;
 
 public class ServerWOFacade {
 	public static void main(String[] args) {
-
 		FacadeSchedule schedule = FacadeSchedule.getMyFacadeObj();
-
 		schedule.startProcess();
-		System.out.println("Start working......");
-		System.out.println("After work done.........");
 		schedule.stopProcess();
 
 	}

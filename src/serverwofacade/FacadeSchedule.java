@@ -21,9 +21,11 @@ public class FacadeSchedule {
         obj.initializeContext();
         obj.initializeListeners();
         obj.createSystemObjects();
+        System.out.println("Start working......");
     }
 
     public void stopProcess() {
+        System.out.println("After work done.........");
         ScheduleServer obj = new ScheduleServer();
         obj.releaseProcesses();
         obj.destory();
